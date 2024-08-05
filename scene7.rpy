@@ -1,5 +1,5 @@
 label scene7:
-    scene bg d3
+    scene bg pengukuhan 
     with dissolve
 
     play music raden_bgm volume 0.5 fadein 1.0

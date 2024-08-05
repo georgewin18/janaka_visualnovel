@@ -15,41 +15,49 @@ define audio.raden_bgm = "audio/bgm/raden.flac"
 define audio.main_bgm = "audio/bgm/main_menu.flac"
 define audio.aisyah_bgm = "audio/bgm/aisyah_sweet.flac"
 define audio.fania_bgm = "audio/bgm/fania_energic.flac"
+define audio.sekar_bgm = "audio/bgm/sekar.flac"
 define audio.sad_bgm = "audio/bgm/sad.flac"
+define audio.dheo_bgm = "audio/bgm/dheo.flac"
+define audio.end_bgm = "audio/bgm/ed.flac"
 define config.default_voice_volume = 0.8
 
-# The game starts here.
+define silhouette = Matrix([0.1, 0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.0, 0.0, 1.0])
+
+image splash = "splash/logo.png"
+image blank = "splash/blank.png"
+
+label splashscreen:
+    scene blank with Pause(1)
+
+    show splash with dissolve:
+        zoom 0.4 truecenter
+    with Pause(2)
+    
+    scene blank with dissolve 
+    with Pause(1)
+
+    return
 
 label start:
+    stop music fadeout 2.0
 
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
+    scene bg start with dissolve
+    with Pause(2)
 
-    stop music fadeout 0.5
     play music raden_bgm volume 0.5 fadein 1.0
 
-    scene bg room
+    scene bg kamar with dissolve:
+        yzoom 1.01
 
     "Aku duduk di meja belajarku, jemariku menari di atas keyboard laptop. Cahaya layar monitor menerangi wajahku, menciptakan bayangan di sudut-sudut ruangan yang sepi."
 
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
-
-    show raden happy with dissolve
-
-    # These display lines of dialogue.
-
     r "Halo, namaku Raden. Baru-baru ini aku menjadi mahasiswa di PENS, Politeknik Elektronika Negeri Surabaya."
-
-    show raden sad
 
     r "Awalnya, aku bermimpi bisa kuliah bersama pacarku, tetapi hubungan kami berakhir sebelum kuliah dimulai."
 
-    show raden idle
-
     r "Sejujurnya, aku berniat ingin bekerja, tapi teman-teman meyakinkanku untuk mencoba SNBT di PENS. Katanya sih salah satu universitas top di Surabaya. Tapi, aku hanya tahu ITS tidak pernah mendengar ada kampus PENS."
+
+    show bg laptop with dissolve
 
     play sound "audio/sfx/typing_short.mp3" volume 0.3
     r "Aku mencoba mencari kata PENS di internet dan yang muncul malah.."
@@ -64,6 +72,9 @@ label start:
 
     "{i}nothing to lose{/i}"
 
+    scene bg kamar with dissolve:
+        yzoom 1.01
+
     r "Dengan perlahan, aku menutup laptop."
 
     r "Kemudian, aku mulai menyiapkan peralatan untuk PKKMB besok. Tas ransel kuat yang telah aku siapkan semalam sudah kugantungkan di sandaran kursi. Almamater abu-abu PENS terlipat rapi di atas meja, bersama dengan buku catatan dan pena."
@@ -72,12 +83,8 @@ label start:
 
     r "Aku tersenyum, menatap langit-langit, penuh harapan bahwa semuanya akan baik-baik saja."
 
-    hide raden with dissolve
-
     "{i}Semoga...{/i}"
 
     jump scene2
-
-    # This ends the game.
 
     return

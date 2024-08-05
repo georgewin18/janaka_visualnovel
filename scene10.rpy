@@ -1,12 +1,11 @@
 label scene10:
-    scene bg room
-    with dissolve
+    scene bg kamar with dissolve:
+        zoom 1.01
 
     "Hari ini, Minggu, 23 Juni 2024, aku mengikuti Technical Meeting Technogear secara online pukul 15.00 WIB. Ternyata, informasi tentang pembagian kelompok itu memang benar! Aku tergabung dalam sebuah kelompok bersama beberapa teman lain yang belum kukenal."
 
     "Saat panitia menjelaskan tentang penugasan Technogear, aku langsung merasa jantungku berdebar kencang. Kami diminta membuat buku sampul berwarna abu-abu dan nametag berbentuk gerigi, dan yang paling mengejutkan, tugas ini harus dikumpulkan besok!"
-
-    show raden confused with dissolve    
+   
     r "{i}Besok? Seriusan?{/i}"
 
     "Setelah Technical Meeting selesai, aku langsung menghubungi teman-teman sekelompok melalui grup chat untuk berdiskusi tentang pembagian tugas. Kami memutuskan untuk mengerjakan tugas ini bersama-sama."

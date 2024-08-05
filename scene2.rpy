@@ -1,6 +1,6 @@
 label scene2:
-    scene bg room
-    with dissolve
+    scene bg kamar2 with dissolve:
+        yzoom 1.01
 
     "Hari ini adalah hari yang istimewa bagiku. Aku akan mengambil almamater PENS, jubah abu-abu yang akan menjadi tanda kebanggaanku sebagai mahasiswa baru."
 
@@ -8,24 +8,20 @@ label scene2:
 
     "Langkahku mantap saat aku meninggalkan rumah menuju kampus."
 
-    scene bg d3
-    with dissolve
-
-    show raden idle with dissolve
+    scene bg d3 with dissolve:
+        xzoom 1.35 xpos -350
 
     "Begitu tiba di sana, suasana ramai dan penuh semangat menyambutku. Para mahasiswa baru seperti aku diminta untuk mengantre untuk registrasi. Meskipun antriannya cukup panjang, para panitia terlihat sangat terorganisir sehingga situasinya tetap terkendali."
 
     "Beberapa di antaranya tampak santai sambil bercanda dengan teman-teman baru mereka."
 
-    show raden idle with moveinleft:
-        xalign 0.75
-
     "Aku berada dalam antrian untuk mengambil almamater, sambil tetap memperhatikan sekitar. Di sebelahku, beberapa wajah baru dengan ekspresi campuran antara gugup dan antusiasme terlihat menunggu giliran mereka."
 
     stop music fadeout 2.0
-    
-    show anon_chara with moveinleft:
-        xalign 0.25
+
+    show aisyah kesal_nojas at Transform(matrixcolor=(silhouette)):
+        zoom 0.2 xpos 0.25 ypos 75
+    with dissolve
 
     voice "audio/vo/aisyah/duh.mp3"
     anon "\"Duh, ini antrinya lama banget sih,\""
@@ -33,9 +29,9 @@ label scene2:
     voice sustain
     "Aku menoleh ke belakang dan melihat seorang cewek polos menggunakan kerudung. Ekspresi wajahnya memperlihatkan sedikit kekesalan akibat menunggu terlalu lama."
 
-    hide anon_chara with dissolve
-    show aisyah grump with dissolve:
-        xalign 0.25
+    hide aisyah with dissolve
+    show aisyah kesal_nojas with dissolve:
+        zoom 0.2 xpos 0.25 ypos 75
 
     play music aisyah_bgm volume 0.5 fadein 1.0
 
@@ -45,19 +41,17 @@ label scene2:
     voice sustain
     "Dia mengenakan yang terlihat sederhana namun rapi. Tatapan matanya mencari-cari jawaban dari siapa pun yang bisa memberikan informasi tentang kecepatan proses antrian ini."
 
-    show raden happy
-
     "Aku tersenyum ramah padanya, mencoba meredakan sedikit kekecewaannya."
 
     r "Kurang tahu sih, haruse bentar lagi juga jalan"
 
-    show aisyah happy
+    show aisyah senyum_nojas with dissolve
 
     voice "audio/vo/aisyah/hah.mp3"
-    a "Ya, semoga saja,"
+    anon "Ya, semoga saja,"
 
     voice sustain
-    a "Ngomong-ngomong, kamu dari jurusan apa?"
+    anon "Ngomong-ngomong, kamu dari jurusan apa?"
 
     r "Aku dari Departeman Mekanika, kamu?"
 
@@ -87,8 +81,11 @@ label scene2:
     voice sustain
     "Aisyah segera membuka plastik dan mengeluarkan almamaternya. Dengan hati-hati, dia mengenakan jubah abu-abu tersebuti. Aku mengamatinya dengan seksama."
 
-    scene bg aisyah_almamater
-    with dissolve
+    scene bg d3 with dissolve:
+        xzoom 1.35 xpos -350
+
+    show aisyah senyum2 with dissolve:
+        zoom 0.2 xpos 0.25 ypos 75
 
     "Penampilannya tampak memukau di mataku. Kerudung pastel yang ia kenakan kontras dengan warna abu-abu jubah almamater, memberikan kesan yang anggun dan elegan. Almamater itu terlihat pas di tubuhnya, membuatnya tampak lebih percaya diri."
 
@@ -100,13 +97,11 @@ label scene2:
 
     "Sepatu flat hitamnya yang sederhana namun elegan melengkapi penampilan keseluruhan."
 
-    scene bg d3
+    scene bg d3 with dissolve:
+        xzoom 1.35 xpos -350
 
-    show aisyah vhappy:
-        xalign 0.25
-    show raden happy:
-        xalign 0.75
-    with dissolve
+    show aisyah senyum_lebar with dissolve:
+        zoom 0.2 xpos 0.25 ypos 75
 
     voice "audio/vo/aisyah/gimana.mp3"
     a "Bagaimana? Cocok nggak?"
@@ -114,13 +109,10 @@ label scene2:
     voice sustain
     r "Cocok banget. Kamu kelihatan keren."
 
-    show aisyah shy
-
     voice "audio/vo/aisyah/makasi.mp3"
     a "Haha, makasih."
 
     voice sustain
-    show aisyah vhappy
 
     r "Aku cuma jujur, kok,"
 
@@ -136,7 +128,7 @@ label scene2:
 
     r "Enggak foto? Sini tak fotoin dah,"
 
-    show aisyah happy
+    show aisyah senyum
 
     voice "audio/vo/aisyah/gasuka.mp3"
     a "Gak mau, gak suka foto-foto aku,"
@@ -148,11 +140,11 @@ label scene2:
 
     stop music fadeout 2.0
 
-    show aisyah nervous
+    show aisyah senyum_gugup
 
     "Namun, tiba-tiba Aisyah tampak termenung. Matanya melamun sejenak, seperti ada sesuatu yang membebani pikirannya."
 
-    show raden idle
+    play music sad_bgm volume 0.3 fadein 1.0
 
     r "Kamu kenapa?"
 
@@ -168,6 +160,8 @@ label scene2:
     a "Sampai jumpa, Raden. Terima kasih untuk hari ini,"
 
     voice sustain
+    stop music fadeout 2.0
+
     jump scene3
 
     return

@@ -1,6 +1,6 @@
 label scene3:
-    scene bg room 
-    with dissolve
+    scene bg kamar2 with dissolve:
+        yzoom 1.01
 
     play music raden_bgm volume 0.5 fadein 1.0
 
@@ -13,6 +13,8 @@ label scene3:
     "Namun, sebagai mahasiswa baru, PKKMB adalah acara wajib yang harus diikuti oleh semua mahasiswa baru. Bahkan, kabarnya jika tidak hadir, status mahasiswa di PENS bisa dicabut. Aku harus mengikutinya."
 
     "Siapa tahu ada hal menarik yang bisa kutemukan di sana, selain rasa bosan tentunya."
+
+    show bg laptop with dissolve
 
     "Aku membuka laptopku dan masuk ke grup MABA PENS. Puluhan notifikasi langsung membanjiri layar. Mahasiswa baru lainnya ramai membahas PKKMB Technogear. Rasa penasaran bercampur gugup langsung menyerangku."
 
@@ -36,6 +38,9 @@ label scene3:
     "Bisa mendapatkan informasi yang sangat dibutuhkan tentang organisasi dan kegiatan ekstrakurikuler di kampus ini."
 
     "Siapa tahu, di antara semua kesibukan dan intimidasi, ada juga kesempatan untuk menemukan minat baru atau bahkan teman dekat."
+
+    show bg kamar2 with dissolve:
+        yzoom 1.01
 
     "Dengan keyakinan baru, aku menutup laptop dan kembali ke cermin. Melihat almamaterku yang keren itu kembali mengingatkan aku pada semangat baru yang sedang kubangun."
 

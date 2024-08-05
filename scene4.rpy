@@ -1,8 +1,11 @@
-label scene4:
-    scene bg parkiran
-    with dissolve
+init:
+    transform fromleft:
+        ypos 120
+        xpos -400
 
-    show raden idle with moveinleft
+label scene4:
+    scene bg antri
+    with dissolve
 
     "Pagi itu, udara masih terasa sejuk saat aku tiba di depan parkir gedung D3 PENS. Jam di tanganku menunjukkan pukul 05.45, lima belas menit lebih awal dari waktu yang ditentukan. Aku sengaja datang lebih awal agar tidak terburu-buru dan bisa mengamati suasana sekitar."
 
@@ -24,62 +27,50 @@ label scene4:
 
     p "{size=+10}Bagi para peserta silakan berbaris sesuai dengan departemennya masing-masing untuk melakukan registrasi!{/size}"
 
-    show raden idle with moveinleft:
-        xalign 0.75
-    show anon_chara with MoveTransition(0.3, enter=offscreenleft):
-        xalign 0.55
+    show fania gugup at Transform(matrixcolor=(silhouette)):
+        zoom 0.35 xpos 450 ypos 80
+    with MoveTransition(0.3, enter=fromleft)
     
     play sound "audio/sfx/bump.mp3"
     "{size=+10}!!{/size}" with hpunch
-
-    show anon_chara with moveinright:
-        xalign 0.25
 
     voice "audio/vo/fania/aduh.mp3"
     anon "Aduh-aduh, maaf ya, aku kira aku telat!"
 
     voice sustain
     play music raden_bgm volume 0.5 fadein 1.0
-
-    hide anon_chara with dissolve
-    show fania panic with dissolve:
-        xalign 0.25
     
     "Aku menoleh dan melihat seorang perempuan dengan rambut panjang yang diikat, wajahnya terlihat cemas."
+
+    hide fania with dissolve
+    show fania gugup with dissolve:
+        zoom 0.35 xpos 450 ypos 80
 
     r "Ah, iya-iya, gpp, santai aja,"
 
     r "Hati-hati lah, Mbak, nanti kalau jatuh bisa bikin geger satu PENS."
 
-    show fania happy
+    show fania senyum_gugup
 
     voice "audio/vo/fania/hehe.mp3"
-    f "Hehe, kukira aku telat,"
+    anon "Hehe, kukira aku telat,"
 
     voice sustain
-    show raden idle at right with moveinleft
-    show fania happy at center with moveinleft
-    show panitia at left with moveinleft
 
     p "Departemen apa, Mbak?"
 
     voice "audio/vo/fania/dtmk.mp3"
-    f "DTMK,"
+    anon "DTMK,"
 
     voice sustain
     p "Oh, DTMK sebelah situ, Mbak,"
 
     "Perempuan itu mengangguk, lalu berlari kecil menuju barisan yang ditunjukkan oleh panitia. Aku hanya bisa menggelengkan kepala sambil tersenyum."   
 
-    hide panitia
-    hide fania 
-    with moveoutleft
-    hide raden with moveoutright
+    hide fania with moveoutleft
 
-    scene bg gedung_tc
-    with slideawayleft
-
-    show raden idle with moveinleft
+    scene bg antri
+    with dissolve
 
     "Meja registrasi akhirnya di depan mata. Aku menyerahkan berkas-berkas yang diminta, lalu mulai mengisi formulir. Nama, cek. Jam registrasi, cek. Tapi, saat tiba di kolom NRP, otakku mendadak blank."
 
@@ -93,12 +84,8 @@ label scene4:
 
     "\"Gilak, nggak capek apa ngomong gitu terus?\" pikirku sambil berjalan menuju gedung Pascasarjana."
 
-    hide raden with moveoutleft
-
-    scene bg gedung_ps
-    with slideawayright
-
-    show raden idle with moveinleft
+    scene bg ps1
+    with dissolve
 
     "Namun, saat sampai di gedung, aku tercengang. Ternyata, kami harus naik tangga sampai ke {size=+10}lantai 6!{/size}"
 
@@ -109,7 +96,7 @@ label scene4:
     r "Aduh, hampir aja jadi tontonan gratis nih,"
 
     scene bg depan_audit
-    with slideawaydown
+    with dissolve
 
     "Akhirnya, setelah perjuangan yang cukup melelahkan, aku berhasil sampai di lantai 6. Aku mengatur napasku sambil menyeka keringat di dahi."
 

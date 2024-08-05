@@ -1,6 +1,5 @@
 label scene9:
-    scene bg d3 
-    with dissolve
+    scene bg lapmer_blurred with dissolve
 
     "Matahari yang mulai terbenam memberikan cahaya oranye lembut di langit, menambah kehangatan suasana."
 
@@ -18,35 +17,31 @@ label scene9:
 
     play music fania_bgm volume 0.3 fadein 1.0
 
-    show fania idle:
-        xalign 0.25
-    show raden idle:
-        xalign 0.75
-    with dissolve
+    show fania senyum with dissolve:
+        zoom 0.35 xpos 450 ypos 80
 
     r "Eh, kamu.. yang itu kan..?,"
 
-    show fania nervous
+    show fania senyum_gugup
 
     voice "audio/vo/fania/heheiya.mp3"
-    f "Hehe, iya... Btw, maaf ya soal kemarin, nggak sengaja soalnya. Sumpah,"
+    anon "Hehe, iya... Btw, maaf ya soal kemarin, nggak sengaja soalnya. Sumpah,"
 
     voice sustain
     f "Oh iya, aku Fania. Kamu?"
 
     r "Raden. Keren sih tadi, aku sempat ngelihat kamu sekilas. Ngobrolnya kelihatan asik banget."
 
-    show fania happy
+    show fania senyum
 
     voice "audio/vo/fania/hehehe.mp3"
     f "Muehehe... Ya biasalah, cari teman. Waktu kuliah ya perbanyak koneksi lah,"
 
     voice sustain
-    show raden happy
 
     r "Bener juga. Btw kek dejavu ya, kita pertama kali ketemu waktu registrasi eh ketemu lagi pas registrasi."
 
-    show fania vhappy
+    show fania tertawa
 
     voice "audio/vo/fania/hehe.mp3"
     f "Iya ya haha"
@@ -54,7 +49,7 @@ label scene9:
     voice sustain
     "Dilihat bagagimanapun dia adalah tipe yang gampang dikenali oleh siapapun."
 
-    show fania happy
+    show fania senyum
 
     voice "audio/vo/fania/duluan.mp3"
     f "Duluan ya Raden, sampai ketemu besok ya?"
@@ -63,7 +58,6 @@ label scene9:
     r "Sampai ketemu besok, Fania."
 
     hide fania with moveoutleft
-    show raden idle at center with moveinright
 
     "Kami saling melambaikan tangan sebelum akhirnya berjalan menuju arah masing-masing. Fania tampak mengisi formulir presensi dan segera pergi ke arah parkiran. Namun, antrean untuk DTME masih sangat panjang."
 
@@ -77,10 +71,8 @@ label scene9:
 
     r "Rill cuy, udah mah lapar, ngantuk pula."
 
-    show raden idle with moveinright:
-        xalign 0.25
-    show sekar happy with moveinright:
-        xalign 0.75
+    show sekar senyum with moveinright:
+        xalign 1.0 zoom 0.45 ypos -100
 
     voice "audio/vo/sekar/sabarlah.mp3"
     p "Iya sabar, kan yang mau presensi gak kamu aja"
@@ -91,13 +83,11 @@ label scene9:
 
     p "Oh. Ini DTMK, DTME sebelah situ, yang udh selesai duluan"
 
-    show raden shock
-
     r "{size=+10}ALAMAKKK{/size}" with vpunch
 
     r "Harusnya udah pulang dari tadi aku, terima kasih kak"
 
-    show sekar vhappy
+    show sekar senyum2
 
     "\"Yang lucu apa dah, kok ketawa?\" tanyaku didalam hati"
 

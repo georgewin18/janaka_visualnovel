@@ -63,7 +63,7 @@ define gui.text_font = "DejaVuSans.ttf"
 define gui.name_text_font = "DejaVuSans.ttf"
 
 ## The font used for out-of-game text.
-define gui.interface_text_font = "DejaVuSans.ttf"
+define gui.interface_text_font = "fonts/Baloo-Regular.ttf"
 
 ## The size of normal dialogue text.
 define gui.text_size = 33
@@ -87,7 +87,8 @@ define gui.title_text_size = 75
 ## Main and Game Menus #########################################################
 
 ## The images used for the main and game menus.
-define gui.main_menu_background = "gui/main_menu.png"
+# define gui.main_menu_background = "gui/main_menu.png"
+define gui.main_menu_background = Movie(play="gui/main_menu.webm")
 define gui.game_menu_background = "gui/game_menu.png"
 
 
@@ -188,6 +189,7 @@ define gui.confirm_button_text_xalign = 0.5
 
 define gui.page_button_borders = Borders(15, 6, 15, 6)
 
+define gui.quick_button_text_font = gui.text_font
 define gui.quick_button_borders = Borders(15, 6, 15, 0)
 define gui.quick_button_text_size = 21
 define gui.quick_button_text_idle_color = '#000000'
@@ -260,7 +262,7 @@ define gui.notify_ypos = 68
 define gui.choice_spacing = 33
 
 ## Buttons in the navigation section of the main and game menus.
-define gui.navigation_spacing = 20
+define gui.navigation_spacing = 5
 
 ## Controls the amount of spacing between preferences.
 define gui.pref_spacing = 15

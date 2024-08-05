@@ -1,6 +1,8 @@
 label scene13:
-    scene bg lapmer
+    scene bg lapangan2
     with dissolve
+
+    play music raden_bgm fadein 1.0 volume 0.5
 
     "Hari-hariku selama Technogear terasa seperti roller coaster. Ada rasa senang karena bisa mengenal lebih banyak tentang kehidupan kampus, tapi juga ada rasa lelah karena kegiatan yang padat."
 
@@ -18,6 +20,9 @@ label scene13:
 
     p "{size=+10}Kalian punya waktu 30 menit untuk membuat logo PENS raksasa di lapangan ini!{/size}"
 
+    show bg lapangan1 with dissolve:
+        zoom 1.1
+
     play music "audio/sfx/crowd_talking.mp3" fadein 1.0
     "Semua mahasiswa baru langsung berhamburan, mencari cara untuk menyelesaikan tugas yang mustahil ini. Aku dan teman-teman sekelompokku berusaha mengatur strategi, tapi kami semua bingung harus mulai dari mana."
 
@@ -27,12 +32,20 @@ label scene13:
 
     "Di tengah kepanikan, aku mendengar suara teriakan dari senior-senior di tribun. Ada yang menyemangati, ada pula yang memarahi. Aku berusaha untuk tidak terpengaruh, fokus pada tugas yang ada."
 
+    scene bg lapangan3 with dissolve:
+        zoom 1.1
+
     play sound "audio/sfx/crowd.mp3" fadein 1.0
     "Setelah beberapa kali percobaan yang gagal, akhirnya kami berhasil membentuk logo PENS yang cukup besar dan rapi. Teriakan dari pada senior berubah menjadi tepuk tangan yang meriah."
 
     stop music fadeout 2.0
     stop sound fadeout 2.0
     "Kami diminta untuk kembali berkumpul di lapangan merah. Kali ini, suasana terasa lebih formal. Kami berbaris rapi sesuai departemen masing-masing, menunggu instruksi selanjutnya."
+
+    show bg lapangan2 with dissolve:
+        zoom 1.1
+
+    play music end_bgm fadein 1.0 volume 0.5
 
     "Tak lama kemudian, para ketua HIMA dan Presiden BEM PENS memasuki lapangan. Mereka berjalan dengan gagah menuju panggung yang telah disiapkan."
 
@@ -48,9 +61,6 @@ label scene13:
 
     "Esok hari, perkuliahan akan dimulai. Aku pulang ke rumah dengan perasaan campur aduk. Ada rasa senang, gugup, dan semangat yang bercampur menjadi satu. Aku tidak sabar untuk memulai petualangan baruku sebagai mahasiswa PENS."
 
-    scene bg continued
-    with dissolve
-
-    "{i}Disinilah cerita kalian dimulai...{/i}"
+    jump credit
 
     return

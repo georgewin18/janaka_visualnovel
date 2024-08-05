@@ -1,45 +1,40 @@
 label scene5:
-    scene bg auditorium
+    scene bg auditorium1
     with dissolve
-
-    show panitia with dissolve
 
     p "Untuk peserta perempuan silakan duduk di bagian kanan saya, untuk peserta laki-laki duduk di bagian kiri saya,"
 
-    hide panitia with dissolve
-
-    show raden idle with dissolve
-
     "Aku melangkah masuk, terpukau dengan luasnya ruangan. Deretan kursi yang tampaknya tak berujung memenuhi auditorium yang siap menampung ratusan mahasiswa baru. Aku berjalan ke arah kiri, mencari tempat duduk yang kosong."
 
-    show dheo happy at left with moveinleft
+    stop music fadeout 2.0
+
+    show dheo senyum with moveinleft:
+        zoom 0.4 xalign 0.10 
 
     anon "Eh, kosong gk?"
+
+    play music dheo_bgm volume 0.3 fadein 1.0
 
     r "Oh, kosong kok,"
 
     anon "Oke."
 
-    show raden with moveinleft:
-        xalign 0.75
     show dheo with moveinleft:
-        xalign 0.25
+        xalign 0.5
 
     d "Btw, kenalin, Dheo."
 
     r "Raden"
 
-    show dheo vhappy
+    show dheo tertawa
 
     d "Gila ya, capek banget naik tangga 6 lantai,"
-
-    show raden happy
 
     r "Iya, nih. Mana bawaannya banyak lagi."
 
     "Kami berdua mulai mengobrol, berbagi cerita tentang pengalaman kami selama pendaftaran dan persiapan PKKMB. Ternyata, Dheo juga berasal dari Surabaya, sama sepertiku. Kami semakin akrab saat menyadari bahwa kami memiliki banyak kesamaan, mulai dari hobi hingga selera musik."
 
-    show dheo happy
+    show dheo senyum
 
     d "Eh, kamu udah liat pengumuman grup belum? Katanya kita bakal dibagi jadi beberapa kelompok,"
 
@@ -63,8 +58,8 @@ label scene5:
 
     r "Iya, semoga aja."
 
-    scene bg auditorium
-    with dissolve
+    scene bg auditorium2 with dissolve:
+        yzoom 1.01
 
     "Tibalah saat yang ditunggu-tunggu, acara PKKMB Technogear PENS resmi dimulai. Auditorium yang tadinya ramai dengan obrolan mahasiswa baru, kini hening seketika saat MC membuka acara. Aku duduk tegak, berusaha menyerap setiap informasi yang disampaikan."
 
@@ -73,6 +68,9 @@ label scene5:
     "Aku juga mendapatkan informasi tentang berbagai fasilitas kampus, seperti perpustakaan, laboratorium, dan pusat kegiatan mahasiswa."
 
     "Tidak hanya itu, PKKMB juga memberikan gambaran tentang kehidupan di kampus PENS. Aku belajar tentang berbagai organisasi mahasiswa, kegiatan ekstrakurikuler, dan acara-acara kampus yang rutin diadakan."
+
+    show bg auditorium3
+    with dissolve
 
     "Salah satu hal yang paling menarik perhatianku adalah informasi tentang beasiswa. Ternyata, PENS menyediakan berbagai jenis beasiswa, baik untuk kuliah di dalam negeri maupun pertukaran pelajar ke luar negeri."
 

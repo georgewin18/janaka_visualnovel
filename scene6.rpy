@@ -8,14 +8,10 @@ label scene6:
 
     stop music fadeout 2.0
 
-    show raden idle with dissolve
-
     r "Hai, Aisyah bukan?"
 
-    show raden with moveinleft:
-        xalign 0.75
-    show aisyah happy with dissolve:
-        xalign 0.25
+    show aisyah senyum with dissolve:
+        zoom 0.2 xpos 0.25 ypos 75
 
     play music aisyah_bgm volume 0.5 fadein 1.0
 
@@ -45,7 +41,7 @@ label scene6:
 
     r "Oh ya? Beasiswa apa yang paling menarik buatmu?"
 
-    show aisyah vhappy
+    show aisyah senyum2
 
     voice "audio/vo/aisyah/hehe.mp3"
     a "Ohh, ada deh..."
@@ -56,7 +52,7 @@ label scene6:
     voice sustain
     r "Ehm... ya... Aku sih tadi kebanyakan tidur."
 
-    show aisyah grump
+    show aisyah marah
 
     voice "audio/vo/aisyah/hah2.mp3"
     a "{size=+5}Hah?{/size}" with vpunch
@@ -82,7 +78,7 @@ label scene6:
 
     r "Aku janji nggak akan tidur lagi pas sesi penting."
 
-    show aisyah happy
+    show aisyah senyum
 
     voice "audio/vo/aisyah/yaudah.mp3"
     a "Iya iya, maaf kalau marah marah hehe, makasih ya!"

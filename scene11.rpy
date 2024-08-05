@@ -1,22 +1,21 @@
 label scene11:
-    scene bg room
+    scene bg kamar2 with dissolve
 
     play sound "audio/sfx/alarm.mp3" fadein 1.0 volume 0.5
     "Alarm berbunyi, memaksaku bangun dari tidur yang nyenyak. Aku mengucek mata, berusaha mengumpulkan kesadaran. Setelah mandi dan sarapan cepat, aku bergegas menuju PENS, membawa buku sampul dan nametag hasil kerja keras semalam."
 
     stop sound fadeout 2.0
-    scene bg gedung_ps
+    scene bg ps1 with dissolve
 
     "Sesampainya di kampus, aku langsung disambut pemandangan yang sudah familiar: tangga menuju lantai 6 gedung Pascasarjana."
-    
-    show raden idle with dissolve
 
     r "Baru juga bangun udah disuruh naik tangga,"
 
     scene bg depan_audit
-    with slideawaydown
+    with dissolve
 
-    show sekar happy with dissolve
+    show sekar senyum with dissolve:
+        xalign 0.4 zoom 0.45 ypos -100
 
     "Sesampainya di lantai 6, aku mencari kelompokku dan bertemu dengan LO kami, Kak Sekar. Dia seorang mahasiswi senior yang ramah. Kak Sekar langsung memandu kami ke sebuah ruangan untuk memulai Technogear."
 
@@ -24,20 +23,14 @@ label scene11:
 
     "Selama Technogear, kami dibombardir dengan informasi tentang kehidupan mahasiswa di PENS. Mulai dari Unit Kegiatan Mahasiswa (UKM), komunitas, organisasi, hingga Himpunan Mahasiswa (HIMA) di setiap jurusan. Rasanya seperti ada ratusan pilihan kegiatan yang bisa diikuti!"
 
-    show anon_chara:
-        xalign 0.25
-    show raden idle:
-        xalign 0.75
-    with dissolve
+    show bg ps2 with dissolve
 
     r "Wah, banyak banget pilihannya,"
 
     anon "Iya, bingung mau ikut yang mana,"
 
-    scene bg depan_audit 
-    with dissolve
-
-    show sekar happy with dissolve
+    show sekar senyum2 with dissolve:
+        xalign 0.4 zoom 0.45 ypos -100
 
     "Kak Sekar menjelaskan dengan detail tentang setiap UKM dan organisasi, mulai dari kegiatan rutin, prestasi, hingga cara mendaftar. Aku mencatat semua informasi penting, berharap bisa menemukan kegiatan yang sesuai dengan minat dan bakatku."
 

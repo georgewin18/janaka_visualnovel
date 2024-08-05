@@ -296,7 +296,7 @@ screen navigation():
         style_prefix "navigation"
 
         xpos gui.navigation_xpos
-        yalign 0.5
+        yalign 0.475
 
         spacing gui.navigation_spacing
 
@@ -306,9 +306,9 @@ screen navigation():
 
         else:
 
-            textbutton _("History") action ShowMenu("history")
+            textbutton _("HISTORY") action ShowMenu("history")
 
-            textbutton _("Save") action ShowMenu("save")
+            textbutton _("SAVE") action ShowMenu("save")
 
         textbutton _("LOAD") action ShowMenu("load")
 
@@ -320,7 +320,7 @@ screen navigation():
 
         elif not main_menu:
 
-            textbutton _("Main Menu") action MainMenu()
+            textbutton _("MAIN MENU") action MainMenu()
 
         textbutton _("ABOUT") action ShowMenu("about")
 
