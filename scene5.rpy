@@ -4,7 +4,9 @@ label scene5:
 
     p "Untuk peserta perempuan silakan duduk di bagian kanan saya, untuk peserta laki-laki duduk di bagian kiri saya,"
 
-    "Aku melangkah masuk, terpukau dengan luasnya ruangan. Deretan kursi yang tampaknya tak berujung memenuhi auditorium yang siap menampung ratusan mahasiswa baru. Aku berjalan ke arah kiri, mencari tempat duduk yang kosong."
+    "Aku melangkah masuk, terpukau dengan luasnya ruangan. Deretan kursi yang tampaknya tak berujung memenuhi auditorium yang siap menampung ratusan mahasiswa baru."
+    
+    "Aku berjalan ke arah kiri, mencari tempat duduk yang kosong."
 
     stop music fadeout 2.0
 
@@ -32,7 +34,9 @@ label scene5:
 
     r "Iya, nih. Mana bawaannya banyak lagi."
 
-    "Kami berdua mulai mengobrol, berbagi cerita tentang pengalaman kami selama pendaftaran dan persiapan PKKMB. Ternyata, Dheo juga berasal dari Surabaya, sama sepertiku. Kami semakin akrab saat menyadari bahwa kami memiliki banyak kesamaan, mulai dari hobi hingga selera musik."
+    "Kami berdua mulai mengobrol, berbagi cerita tentang pengalaman kami selama pendaftaran dan persiapan PKKMB. Ternyata, Dheo juga berasal dari Surabaya, sama sepertiku." 
+    
+    "Kami semakin akrab saat menyadari bahwa kami memiliki banyak kesamaan, mulai dari hobi hingga selera musik."
 
     show dheo senyum
 
@@ -61,9 +65,13 @@ label scene5:
     scene bg auditorium2 with dissolve:
         yzoom 1.01
 
-    "Tibalah saat yang ditunggu-tunggu, acara PKKMB Technogear PENS resmi dimulai. Auditorium yang tadinya ramai dengan obrolan mahasiswa baru, kini hening seketika saat MC membuka acara. Aku duduk tegak, berusaha menyerap setiap informasi yang disampaikan."
+    "Tibalah saat yang ditunggu-tunggu, acara PKKMB Technogear PENS resmi dimulai. Auditorium yang tadinya ramai dengan obrolan mahasiswa baru, kini hening seketika saat MC membuka acara."
+    
+    "Aku duduk tegak, berusaha menyerap setiap informasi yang disampaikan."
 
-    "Selama acara, aku mendapatkan banyak sekali pemahaman baru tentang PENS. Mulai dari sejarah berdirinya kampus, visi dan misi, hingga struktur organisasi dan birokrasi yang berlaku. meskipun saat acara aku ketiduran dan harus dibangunkan oleh panitia."
+    "Selama acara, aku mendapatkan banyak sekali pemahaman baru tentang PENS. Mulai dari sejarah berdirinya kampus, visi dan misi, hingga struktur organisasi dan birokrasi yang berlaku." 
+    
+    "Meskipun saat acara aku ketiduran dan harus dibangunkan oleh panitia."
 
     "Aku juga mendapatkan informasi tentang berbagai fasilitas kampus, seperti perpustakaan, laboratorium, dan pusat kegiatan mahasiswa."
 

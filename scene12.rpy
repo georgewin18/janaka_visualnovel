@@ -6,7 +6,9 @@ label scene12:
 
     stop music fadeout 2.0
 
-    "Kami diberitahu bahwa akan ada sesi debat tentang kearifan lokal. Setiap kelompok diminta untuk membagi diri menjadi dua tim: tim pro dan tim kontra. Aku dan teman-teman kelompokku segera berdiskusi dan menentukan posisi masing-masing."
+    "Kami diberitahu bahwa akan ada sesi debat tentang kearifan lokal. Setiap kelompok diminta untuk membagi diri menjadi dua tim: tim pro dan tim kontra." 
+    
+    "Aku dan teman-teman kelompokku segera berdiskusi dan menentukan posisi masing-masing."
 
     show sekar senyum with dissolve:
         xalign 0.4 zoom 0.45 ypos -100
@@ -17,7 +19,9 @@ label scene12:
     s "Selamat pagi semuanya,"
 
     voice sustain
-    s "Jadi hari ini kita akan mengadakan sesi debat tentang kearifan lokal. Setiap kelompok harus membagi diri menjadi dua tim, tim pro dan tim kontra. Silakan diskusikan di antara kalian dan tentukan siapa yang akan berada di tim mana ya."
+    s "Jadi hari ini kita akan mengadakan sesi debat tentang kearifan lokal. Setiap kelompok harus membagi diri menjadi dua tim, tim pro dan tim kontra." 
+    
+    s "Silakan diskusikan di antara kalian dan tentukan siapa yang akan berada di tim mana ya."
     
     hide sekar with dissolve
 
@@ -36,7 +40,9 @@ label scene12:
 
     "Kami berbicara tentang bagaimana kearifan lokal dapat menjadi identitas dan kekuatan bangsa, serta bagaimana nilai-nilai yang terkandung di dalamnya masih relevan hingga saat ini."
 
-    "Selama debat berlangsung, mataku tidak bisa melihat ke arah lain selain pemandu kami, Kak Sekar. Dia tampak kelelahan, matanya terlihat seperti mengantuk dan lelah, namun seolah mencoba menutupi itu di depan adik kelasnya."
+    "Selama debat berlangsung, mataku tidak bisa melihat ke arah lain selain pemandu kami, Kak Sekar." 
+    
+    "Dia tampak kelelahan, matanya terlihat seperti mengantuk dan lelah, namun seolah mencoba menutupi itu di depan adik kelasnya."
 
     "Aku bisa melihat dari gerak-geriknya bahwa dia benar-benar berusaha keras untuk tetap tampil profesional dan bersemangat."
 
@@ -86,6 +92,8 @@ label scene12:
     "Setelah itu kami diminta untuk kembali ke auditorium untuk melanjutkan acara Technogear"
 
     stop music fadeout 2.0
+    scene black with dissolve
+    with Pause(0.2)
 
     jump scene13
 

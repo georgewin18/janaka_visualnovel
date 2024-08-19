@@ -1,13 +1,18 @@
 label scene8 :
     scene bg pengukuhan
+    with Pause(0.5)
 
-    "Setelah acara pengukuhan yang meriah, kami diarahkan untuk berkumpul sesuai departemen masing-masing. Di DTME, kami diperkenalkan dengan berbagai laboratorium yang akan menjadi tempat kami belajar dan bereksperimen selama kuliah nanti."
+    "Setelah acara pengukuhan yang meriah, kami diarahkan untuk berkumpul sesuai departemen masing-masing."
+    
+    "Di DTME, kami diperkenalkan dengan berbagai laboratorium yang akan menjadi tempat kami belajar dan bereksperimen selama kuliah nanti."
 
     show bg lab with dissolve
 
     "Mulai dari Lab. Manufaktur, Lab. CAD/CAM, Lab. Material, hingga Lab. Konversi Energi. Aku terkesima melihat peralatan dan mesin-mesin canggih yang tersedia di setiap lab."
 
-    "Tak hanya itu, kami juga diperkenalkan dengan dosen-dosen dan asisten laboratorium yang akan membimbing kami selama proses belajar. Mereka terlihat ramah dan bersemangat, membuatku merasa lebih tenang dan yakin akan mendapatkan bimbingan yang baik di sini."
+    "Tak hanya itu, kami juga diperkenalkan dengan dosen-dosen dan asisten laboratorium yang akan membimbing kami selama proses belajar." 
+    
+    "Mereka terlihat ramah dan bersemangat, membuatku merasa lebih tenang dan yakin akan mendapatkan bimbingan yang baik di sini."
 
     "Fasilitas DTME PENS memang sangat lengkap. Selain laboratorium, ada juga ruang kuliah yang nyaman, perpustakaan dengan koleksi buku dan jurnal yang lengkap, serta ruang diskusi yang bisa digunakan untuk belajar kelompok."
 

@@ -35,7 +35,7 @@ define gui.idle_color = '#ffffff'
 define gui.idle_small_color = '#aaaaaa'
 
 ## The color that is used for buttons and bars that are hovered.
-define gui.hover_color = '#66c1e0'
+define gui.hover_color = '#f50487'
 
 ## The color used for a text button when it is selected but not focused. A
 ## button is selected if it is the current screen or preference value.
@@ -72,7 +72,7 @@ define gui.text_size = 33
 define gui.name_text_size = 45
 
 ## The size of text in the game's user interface.
-define gui.interface_text_size = 50
+define gui.interface_text_size = 55
 
 ## The size of labels in the game's user interface.
 define gui.label_text_size = 36
@@ -132,10 +132,10 @@ define gui.namebox_tile = False
 ## number of pixels relative to the left or top side of the textbox, or 0.5 to
 ## center.
 define gui.dialogue_xpos = 375
-define gui.dialogue_ypos = 80
+define gui.dialogue_ypos = 70
 
 ## The maximum width of dialogue text, in pixels.
-define gui.dialogue_width = 1190
+define gui.dialogue_width = 1180
 
 ## The horizontal alignment of the dialogue text. This can be 0.0 for left-
 ## aligned, 0.5 for centered, and 1.0 for right-aligned.
@@ -184,6 +184,7 @@ define gui.button_text_xalign = 0.0
 define gui.radio_button_borders = Borders(27, 6, 6, 6)
 
 define gui.check_button_borders = Borders(27, 6, 6, 6)
+define gui.check_button_text_size = 45
 
 define gui.confirm_button_text_xalign = 0.5
 
@@ -250,7 +251,7 @@ define gui.file_slot_rows = 2
 
 ## The position of the left side of the navigation buttons, relative to the left
 ## side of the screen.
-define gui.navigation_xpos = 100
+define gui.navigation_xpos = 110
 
 ## The vertical position of the skip indicator.
 define gui.skip_ypos = 15
@@ -262,7 +263,7 @@ define gui.notify_ypos = 68
 define gui.choice_spacing = 33
 
 ## Buttons in the navigation section of the main and game menus.
-define gui.navigation_spacing = 5
+define gui.navigation_spacing = -20
 
 ## Controls the amount of spacing between preferences.
 define gui.pref_spacing = 15

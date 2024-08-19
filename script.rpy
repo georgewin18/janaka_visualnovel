@@ -19,7 +19,6 @@ define audio.sekar_bgm = "audio/bgm/sekar.flac"
 define audio.sad_bgm = "audio/bgm/sad.flac"
 define audio.dheo_bgm = "audio/bgm/dheo.flac"
 define audio.end_bgm = "audio/bgm/ed.flac"
-define config.default_voice_volume = 0.8
 
 define silhouette = Matrix([0.1, 0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.0, 0.0, 0.1, 0.0, 0.0, 0.0, 0.0, 1.0])
 
@@ -66,7 +65,9 @@ label start:
 
     r "Di bagian bawah hasil pencarian tersebut, memang ada juga kampus PENS. Meskipun demikian, terasa sedikit aneh bahwa yang paling atas adalah gambar-gambar pulpen, bukan langsung mengenai kampus PENS."
 
-    r "Aku mencoba mencari tahu lebih lanjut mengenai kampus. Tentu saja yang aku cek pertamakali adalah biaya UKT yang ternyata begitu murah, bahkan ada juga opsi beasiswa. Kemudian aku mengecek Fasilitas, partnership, lingkungan dan lain-lain."
+    r "Aku mencoba mencari tahu lebih lanjut mengenai kampus. Tentu saja yang aku cek pertamakali adalah biaya UKT yang ternyata begitu murah, bahkan ada juga opsi beasiswa." 
+    
+    r "Kemudian aku mengecek Fasilitas, partnership, lingkungan dan lain-lain."
 
     r "Setelah beberapa pertimbangan, aku berpikir bahwa tidak ada salahnya mencoba."
 
@@ -76,10 +77,6 @@ label start:
         yzoom 1.01
 
     r "Dengan perlahan, aku menutup laptop."
-
-    r "Kemudian, aku mulai menyiapkan peralatan untuk PKKMB besok. Tas ransel kuat yang telah aku siapkan semalam sudah kugantungkan di sandaran kursi. Almamater abu-abu PENS terlipat rapi di atas meja, bersama dengan buku catatan dan pena."
-    
-    r "Aku memeriksa satu per satu, memastikan semua sudah siap untuk hari besar ini."
 
     r "Aku tersenyum, menatap langit-langit, penuh harapan bahwa semuanya akan baik-baik saja."
 

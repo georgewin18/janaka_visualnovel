@@ -8,14 +8,21 @@ label scene2:
 
     "Langkahku mantap saat aku meninggalkan rumah menuju kampus."
 
+    scene black with dissolve
+    with Pause(0.2)
+
     scene bg d3 with dissolve:
         xzoom 1.35 xpos -350
 
-    "Begitu tiba di sana, suasana ramai dan penuh semangat menyambutku. Para mahasiswa baru seperti aku diminta untuk mengantre untuk registrasi. Meskipun antriannya cukup panjang, para panitia terlihat sangat terorganisir sehingga situasinya tetap terkendali."
+    "Begitu tiba di sana, suasana ramai dan penuh semangat menyambutku. Para mahasiswa baru seperti aku diminta untuk mengantre untuk registrasi."
+
+    "Meskipun antriannya cukup panjang, para panitia terlihat sangat terorganisir sehingga situasinya tetap terkendali."
 
     "Beberapa di antaranya tampak santai sambil bercanda dengan teman-teman baru mereka."
 
-    "Aku berada dalam antrian untuk mengambil almamater, sambil tetap memperhatikan sekitar. Di sebelahku, beberapa wajah baru dengan ekspresi campuran antara gugup dan antusiasme terlihat menunggu giliran mereka."
+    "Aku berada dalam antrian untuk mengambil almamater, sambil tetap memperhatikan sekitar." 
+    
+    "Di sebelahku, beberapa wajah baru dengan ekspresi campuran antara gugup dan antusiasme terlihat menunggu giliran mereka."
 
     stop music fadeout 2.0
 
@@ -67,7 +74,9 @@ label scene2:
 
     r "Raden, Mekanika"
 
-    "Setelah menerima almamater, aku melangkah sedikit ke samping untuk memberi ruang bagi Aisyah.. Dia terlihat senang ketika akhirnya tiba gilirannya. Sambil menunggu, aku membolak-balik almamater yang masih terlipat di dalam plastik."
+    "Setelah menerima almamater, aku melangkah sedikit ke samping untuk memberi ruang bagi Aisyah.. Dia terlihat senang ketika akhirnya tiba gilirannya."
+    
+    "Sambil menunggu, aku membolak-balik almamater yang masih terlipat di dalam plastik."
 
     voice "audio/vo/aisyah/mencoba.mp3"
     a "Tidak ingin mencoba?"
@@ -87,7 +96,9 @@ label scene2:
     show aisyah senyum2 with dissolve:
         zoom 0.2 xpos 0.25 ypos 75
 
-    "Penampilannya tampak memukau di mataku. Kerudung pastel yang ia kenakan kontras dengan warna abu-abu jubah almamater, memberikan kesan yang anggun dan elegan. Almamater itu terlihat pas di tubuhnya, membuatnya tampak lebih percaya diri."
+    "Penampilannya begitu memukau. Kerudung putih yang ia kenakan kontras dengan warna abu-abu jubah almamater, memberikan kesan yang anggun dan elegan."
+    
+    "Almamater itu membuatnya tampak lebih percaya diri."
 
     "Matanya yang besar dan ekspresif bersinar dengan kegembiraan saat ia berputar perlahan, menunjukkan bagaimana almamater itu membalut tubuhnya dengan sempurna."
 
@@ -124,7 +135,9 @@ label scene2:
     voice sustain
     r "Memang sudah waktunya dewasa,"
 
-    "Aisyah tertawa, dan suara tawanya lembut serta menenangkan. Bahunya sedikit naik turun saat dia tertawa, dan matanya menyipit, memperlihatkan kerutan kecil di sudut-sudutnya. Ada keanggunan alami dalam cara dia tertawa, memperlihatkan senyumnya yang lebar dan hangat."
+    "Aisyah tertawa, dan suara tawanya lembut serta menenangkan. Bahunya sedikit naik turun saat dia tertawa, dan matanya menyipit, memperlihatkan kerutan kecil di sudut-sudutnya."
+    
+    "Ada keanggunan alami dalam cara dia tertawa, memperlihatkan senyumnya yang lebar dan hangat."
 
     r "Enggak foto? Sini tak fotoin dah,"
 
@@ -161,6 +174,9 @@ label scene2:
 
     voice sustain
     stop music fadeout 2.0
+
+    scene black with dissolve
+    with Pause(0.2)
 
     jump scene3
 

@@ -257,10 +257,10 @@ screen quick_menu():
             textbutton _("Back") action Rollback()
             #textbutton _("History") action ShowMenu('history')
             #textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
-            textbutton _("Auto") action Preference("auto-forward", "toggle")
+            textbutton _("Autoplay") action Preference("auto-forward", "toggle")
             textbutton _("Save") action ShowMenu('save')
             #textbutton _("Save") action QuickSave()
-            textbutton _("Load") action QuickLoad()
+            textbutton _("Load") action ShowMenu('load')
             textbutton _("Menu") action ShowMenu('preferences')
 
 
@@ -294,9 +294,13 @@ screen navigation():
 
     vbox:
         style_prefix "navigation"
-
-        xpos gui.navigation_xpos
-        yalign 0.475
+        
+        if renpy.get_screen('main_menu'):
+            xpos gui.navigation_xpos
+            yalign 0.8
+        else:
+            xpos 75
+            yalign 0.47
 
         spacing gui.navigation_spacing
 
@@ -537,7 +541,7 @@ style game_menu_label_text:
     yalign 0.5
 
 style return_button:
-    xpos gui.navigation_xpos
+    xpos 70
     yalign 1.0
     yoffset -45
 
@@ -574,10 +578,11 @@ screen about():
 
 style about_label is gui_label
 style about_label_text is gui_label_text
-style about_text is gui_text
+style about_text:
+    size 35
 
 style about_label_text:
-    size gui.label_text_size
+    size 70
 
 
 ## Load and Save screens #######################################################
@@ -681,15 +686,15 @@ screen file_slots(title):
 
                     textbutton _(">") action FilePageNext()
 
-                if config.has_sync:
-                    if CurrentScreenName() == "save":
-                        textbutton _("Upload Sync"):
-                            action UploadSync()
-                            xalign 0.5
-                    else:
-                        textbutton _("Download Sync"):
-                            action DownloadSync()
-                            xalign 0.5
+#                if config.has_sync:
+#                    if CurrentScreenName() == "save":
+#                        textbutton _("Upload Sync"):
+#                            action UploadSync()
+#                            xalign 0.5
+#                    else:
+#                        textbutton _("Download Sync"):
+#                            action DownloadSync()
+#                            xalign 0.5
 
 
 style page_label is gui_label

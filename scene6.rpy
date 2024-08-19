@@ -92,6 +92,9 @@ label scene6:
 
     stop music fadeout 2.0
 
+    scene black with dissolve
+    with Pause(0.2)
+
     jump scene7
 
     return

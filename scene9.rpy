@@ -1,5 +1,6 @@
 label scene9:
-    scene bg lapmer_blurred with dissolve
+    scene bg lapmer_blurred
+    with Pause(0.5)
 
     "Matahari yang mulai terbenam memberikan cahaya oranye lembut di langit, menambah kehangatan suasana."
 
@@ -90,6 +91,9 @@ label scene9:
     show sekar senyum2
 
     "\"Yang lucu apa dah, kok ketawa?\" tanyaku didalam hati"
+
+    scene black with dissolve
+    with Pause(0.2)
 
     jump scene10
 
